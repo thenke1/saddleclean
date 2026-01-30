@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Sud's Tack Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">ST</div>
+                <span class="brand-name">Sud's Tack Care</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Service Pricing</h1>
+            <p>Transparent pricing for quality service</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Headstall</h3>
+                <div class="price">$35</div>
+                <ul class="price-features">
+                    <li>Dirt & dust removal</li>
+                    <li>Condition</li>
+                    <li>Quick turnaround</li>
+                </ul>
+            </div>
+            <div class="price-card featured">
+                <span class="featured-badge">POPULAR</span>
+                <h3>Basic Saddle Cleaning</h3>
+                <div class="price">$85</div>
+                <ul class="price-features">
+                    <li>Dirt & dust removal</li>
+                    <li>Condition</li>
+                    <li>Quick turnaround</li>
+                </ul>
+            </div>
+            <div class="price-card">
+                <h3>Tooled Saddle Cleaning</h3>
+                <div class="price">$100 - $150</div>
+                <ul class="price-features">
+                    <li>Dirt & dust removal</li>
+                    <li>Conditioning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Items Section -->
+    <section class="additional-items">
+        <div class="items-container">
+            <h2 class="section-title">Additional Items</h2>
+            <p class="section-subtitle">Pricing for other tack items</p>
+            
+            <div class="items-grid">
+                <div class="item-card">
+                    <h3>Bridles & Reins</h3>
+                    <div class="item-price">$35 - $50</div>
+                    <p>Complete cleaning and conditioning</p>
+                </div>
+                <div class="item-card">
+                    <h3>Halters</h3>
+                    <div class="item-price">$20 - $30</div>
+                    <p>Leather halters only</p>
+                </div>
+                <div class="item-card">
+                    <h3>Breast Collars</h3>
+                    <div class="item-price">$40 - $60</div>
+                    <p>Depends on size and tooling</p>
+                </div>
+                <div class="item-card">
+                    <h3>Stirrups</h3>
+                    <div class="item-price">$15</div>
+                    <p>Per pair, leather cleaning</p>
+                </div>
+                <div class="item-card">
+                    <h3>Saddle Pads</h3>
+                    <div class="item-price">$25</div>
+                    <p>Cleaning and deodorizing</p>
+                </div>
+                <div class="item-card">
+                    <h3>Custom Items</h3>
+                    <div class="item-price">Quote</div>
+                    <p>Contact us for pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <div class="offers-container">
+            <h2 class="section-title">Special Packages</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <h3>Full Tack Package</h3>
+                    <div class="offer-price">$150</div>
+                    <p>Saddle + Headstall + Breast Collar</p>
+                    <span class="savings">Save $20!</span>
+                </div>
+                <div class="offer-card">
+                    <h3>Competition Ready</h3>
+                    <div class="offer-price">$200</div>
+                    <p>Saddle + All tack + Rush service</p>
+                    <span class="savings">Save $35!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="pricing-info">
+        <div class="info-container">
+            <h2 class="section-title">Pricing Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>🕐 Turnaround Time</h3>
+                    <p>Standard service: 3-5 business days<br>Rush service available for additional fee</p>
+                </div>
+                <div class="info-item">
+                    <h3>💳 Payment Methods</h3>
+                    <p>Cash, check, Venmo, and all major credit cards accepted</p>
+                </div>
+                <div class="info-item">
+                    <h3>📝 Quotes</h3>
+                    <p>Free quotes for custom or specialty items. Contact us for details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Questions About Pricing?</h2>
+            <p>Contact us for a free quote on your specific items</p>
+            <a href="contact.html" class="cta-button">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sud's Tack Care. All rights reserved. Professional saddle and horse tack cleaning services.</p>
+    </footer>
+</body>
+</html>
