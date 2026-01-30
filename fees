@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees - Sud's Tack Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">ST</div>
+                <span class="brand-name">Sud's Tack Care</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="fees.html" class="active">Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Additional Services & Fees</h1>
+            <p>Convenient options for busy equestrians</p>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section class="fees">
+        <div class="fees-container">
+            <div class="fee-item">
+                <div>
+                    <div class="fee-name">Pickup & Drop-off Fee</div>
+                    <div class="fee-description">Within 30 miles of our location</div>
+                </div>
+                <div class="fee-price">$25</div>
+            </div>
+            <div class="fee-item">
+                <div>
+                    <div class="fee-name">Mileage Fee</div>
+                    <div class="fee-description">Beyond 30 miles (per mile)</div>
+                </div>
+                <div class="fee-price">$2/mile</div>
+            </div>
+            <div class="fee-item">
+                <div>
+                    <div class="fee-name">Rush Service</div>
+                    <div class="fee-description">24-hour turnaround</div>
+                </div>
+                <div class="fee-price">+$50</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Info Section -->
+    <section class="delivery-info">
+        <div class="delivery-container">
+            <h2 class="section-title">Pickup & Delivery Information</h2>
+            
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <h3>📍 Service Area</h3>
+                    <p>We offer pickup and delivery within 30 miles of our location. For distances beyond 30 miles, a mileage fee of $2 per mile applies.</p>
+                </div>
+                <div class="delivery-card">
+                    <h3>📅 Scheduling</h3>
+                    <p>Pickup and delivery times are scheduled Monday through Friday, 8am-5pm. Weekend appointments available upon request.</p>
+                </div>
+                <div class="delivery-card">
+                    <h3>🚚 What We Pickup</h3>
+                    <p>We can pickup saddles, bridles, and all tack items. Please have items ready and accessible at scheduled pickup time.</p>
+                </div>
+                <div class="delivery-card">
+                    <h3>⚡ Rush Service</h3>
+                    <p>Need it fast? Our rush service guarantees 24-hour turnaround for an additional $50 fee. Must be scheduled in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="how-container">
+            <h2 class="section-title">How Pickup & Delivery Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">1</div>
+                    <h3>Schedule</h3>
+                    <p>Call or text us to schedule your pickup time. We'll confirm the date and time window.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">2</div>
+                    <h3>Pickup</h3>
+                    <p>We arrive at your location during the scheduled window and collect your tack items.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">3</div>
+                    <h3>Service</h3>
+                    <p>Your items are professionally cleaned and conditioned at our facility. We'll text you updates.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">4</div>
+                    <h3>Delivery</h3>
+                    <p>We return your clean tack within 3-5 business days (or 24 hours with rush service).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drop-off Option Section -->
+    <section class="dropoff-section">
+        <div class="dropoff-container">
+            <h2 class="section-title">Prefer to Drop Off?</h2>
+            <div class="dropoff-content">
+                <p>You can also drop off your tack items directly at our location to avoid pickup fees.</p>
+                <div class="dropoff-details">
+                    <div class="detail-item">
+                        <h3>📍 Location</h3>
+                        <p>Contact us for our address and directions</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>🕐 Drop-off Hours</h3>
+                        <p>Monday-Friday: 8am - 5pm<br>Saturday & Sunday: By Appointment</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>💵 Save Money</h3>
+                        <p>No pickup fee when you drop off yourself!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you charge for both pickup and delivery?</h3>
+                    <p>No, the $25 fee covers both pickup and delivery within 30 miles. It's a round-trip fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I schedule same-day service?</h3>
+                    <p>Rush service requires 24 hours minimum. Please contact us as early as possible for urgent requests.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm beyond 30 miles?</h3>
+                    <p>We're happy to serve you! The base fee is $25, plus $2 per mile for each mile beyond 30.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I calculate my total cost?</h3>
+                    <p>Service price + pickup fee (if applicable) + mileage fee (if beyond 30 miles) + rush fee (if needed).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Ready to Schedule?</h2>
+            <p>Contact us to book your pickup or discuss your needs</p>
+            <a href="contact.html" class="cta-button">Schedule Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sud's Tack Care. All rights reserved. Professional saddle and horse tack cleaning services.</p>
+    </footer>
+</body>
+</html>
