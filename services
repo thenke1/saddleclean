@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Sud's Tack Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">ST</div>
+                <span class="brand-name">Sud's Tack Care</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Services</h1>
+            <p>Expert care for all your horse tack and equipment</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🏇</span>
+                <h3>Saddle Cleaning</h3>
+                <p>Cleaning and conditioning for Western and English saddles. We restore the leather's natural beauty while preserving its integrity and comfort.</p>
+                <ul class="service-details">
+                    <li>Complete dirt and dust removal</li>
+                    <li>Deep cleaning of all leather surfaces</li>
+                    <li>Premium conditioning treatment</li>
+                    <li>Hardware cleaning and inspection</li>
+                    <li>Safety check included</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">✨</span>
+                <h3>Tack Cleaning</h3>
+                <p>Cleaning and conditioning of all leather tack (bridles, reins, halters, and breast collars). Remove dirt, sweat, and grime while conditioning for longevity.</p>
+                <ul class="service-details">
+                    <li>Bridles and headstalls</li>
+                    <li>Reins and lead ropes</li>
+                    <li>Halters and tie-downs</li>
+                    <li>Breast collars and martingales</li>
+                    <li>All hardware polished</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🧴</span>
+                <h3>Leather Conditioning</h3>
+                <p>Premium conditioning treatments that keep your leather supple, prevent cracking, and extend the life of your investment.</p>
+                <ul class="service-details">
+                    <li>Premium leather conditioners</li>
+                    <li>Prevents drying and cracking</li>
+                    <li>Restores natural oils</li>
+                    <li>UV protection treatment</li>
+                    <li>Long-lasting results</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🚚</span>
+                <h3>Pickup & Delivery</h3>
+                <p>Convenient pickup and drop-off service available. We come to you, pick-up your tack and return it after cleaning and conditioning.</p>
+                <ul class="service-details">
+                    <li>Scheduled pickup times</li>
+                    <li>Serving within 30 miles</li>
+                    <li>Safe and secure transport</li>
+                    <li>Contactless options available</li>
+                    <li>Text updates on status</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="process-container">
+            <h2 class="section-title">Our Process</h2>
+            <p class="section-subtitle">How we care for your tack</p>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Inspection</h3>
+                    <p>We thoroughly inspect your tack for any damage or wear that needs attention</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Cleaning</h3>
+                    <p>Deep cleaning to remove all dirt, sweat, and grime from every surface</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Conditioning</h3>
+                    <p>Premium conditioning treatment to restore and protect the leather</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Final Check</h3>
+                    <p>Quality inspection and safety check before returning to you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Ready to Book a Service?</h2>
+            <p>Contact us today to schedule your tack cleaning</p>
+            <a href="contact.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sud's Tack Care. All rights reserved. Professional saddle and horse tack cleaning services.</p>
+    </footer>
+</body>
+</html>
