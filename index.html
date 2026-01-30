@@ -5,505 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sud's Tack Care - Saddle & Horse Tack Cleaning</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2c1810;
-            --secondary: #8b6f47;
-            --accent: #c9a86a;
-            --light: #f4ede4;
-            --white: #ffffff;
-            --shadow: rgba(44, 24, 16, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--primary);
-            background-color: var(--light);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-
-        /* Header & Navigation */
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, #1a0f0a 100%);
-            color: var(--white);
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px var(--shadow);
-        }
-
-        nav {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            background: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: var(--primary);
-            box-shadow: 0 4px 15px rgba(201, 168, 106, 0.3);
-            animation: logoFloat 3s ease-in-out infinite;
-        }
-
-        @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
-        }
-
-        .brand-name {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, rgba(44, 24, 16, 0.95) 0%, rgba(139, 111, 71, 0.9) 100%),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%238b6f47" width="1200" height="600"/><path fill="%23c9a86a" opacity="0.1" d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"/></svg>');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            text-align: center;
-            padding: 8rem 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="1" fill="%23c9a86a" opacity="0.3"/></svg>');
-            opacity: 0.2;
-            animation: stars 20s linear infinite;
-        }
-
-        @keyframes stars {
-            from { transform: translateY(0); }
-            to { transform: translateY(100px); }
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-            animation: fadeInUp 1s ease-out 0.4s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--primary);
-            padding: 1.2rem 3rem;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(201, 168, 106, 0.4);
-            animation: fadeInUp 1s ease-out 0.6s both;
-            letter-spacing: 1px;
-        }
-
-        .cta-button:hover {
-            background: var(--white);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(201, 168, 106, 0.6);
-        }
-
-        /* Services Section */
-        .services {
-            padding: 6rem 2rem;
-            background: var(--white);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: var(--secondary);
-            margin-bottom: 4rem;
-            font-weight: 300;
-        }
-
-        .services-grid {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .service-card {
-            background: linear-gradient(135deg, var(--light) 0%, #ffffff 100%);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px var(--shadow);
-            transition: all 0.4s ease;
-            border: 1px solid rgba(201, 168, 106, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent) 0%, var(--secondary) 100%);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s ease;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 50px rgba(44, 24, 16, 0.15);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-
-        .service-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .service-card p {
-            font-size: 1rem;
-            color: var(--secondary);
-            line-height: 1.8;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--light) 0%, #e8dfd2 100%);
-        }
-
-        .pricing-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .price-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px var(--shadow);
-            text-align: center;
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
-        }
-
-        .price-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: 0 15px 50px rgba(201, 168, 106, 0.3);
-        }
-
-        .price-card.featured {
-            border-color: var(--accent);
-            position: relative;
-            transform: scale(1.05);
-        }
-
-        .featured-badge {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            background: var(--accent);
-            color: var(--primary);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .price-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin: 1.5rem 0;
-            font-family: 'Cormorant Garamond', serif;
-        }
-
-        .price-features {
-            list-style: none;
-            margin: 2rem 0;
-            text-align: left;
-        }
-
-        .price-features li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid rgba(201, 168, 106, 0.2);
-            color: var(--secondary);
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .price-features li::before {
-            content: '✓';
-            color: var(--accent);
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-
-        /* Additional Fees Section */
-        .fees {
-            padding: 6rem 2rem;
-            background: var(--white);
-        }
-
-        .fees-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .fee-item {
-            background: var(--light);
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--accent);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-
-        .fee-item:hover {
-            transform: translateX(10px);
-            box-shadow: 0 5px 20px var(--shadow);
-        }
-
-        .fee-name {
-            font-size: 1.3rem;
-            font-weight: 500;
-            color: var(--primary);
-        }
-
-        .fee-description {
-            font-size: 0.95rem;
-            color: var(--secondary);
-            margin-top: 0.3rem;
-        }
-
-        .fee-price {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--accent);
-            font-family: 'Cormorant Garamond', serif;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--primary) 0%, #1a0f0a 100%);
-            color: var(--white);
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .contact-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .contact-card:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-        }
-
-        .contact-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-            color: var(--accent);
-        }
-
-        .contact-card p {
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: var(--white);
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.95rem;
-        }
-
-        footer p {
-            opacity: 0.8;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .price-card.featured {
-                transform: scale(1);
-            }
-
-            .fee-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -514,10 +16,11 @@
                 <span class="brand-name">Sud's Tack Care</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#fees">Fees</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -526,129 +29,75 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Sud's Saddle & Tack Cleaning</h1>
-            <p>Professional care for your most valued equestrian equipment. Expert cleaning, conditioning, and inpection services with convenient pickup and delivery.</p>
-            <a href="#contact" class="cta-button">Book Your Service</a>
+            <p>Professional care for your most valued equestrian equipment. Expert cleaning, conditioning, and inspection services with convenient pickup and delivery.</p>
+            <a href="contact.html" class="cta-button">Book Your Service</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-subtitle">Expert care for all your horse tack and equipment</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <span class="service-icon">🏇</span>
-                <h3>Saddle Cleaning</h3>
-                <p>Cleaning and conditioning for Western and English saddles. We restore the leather's natural beauty while preserving its integrity and comfort.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">✨</span>
-                <h3>Tack Cleaning</h3>
-                <p>Cleaning and conditioning of all leather tack (bridles, reins, halters, and breast collars). Remove dirt, sweat, and grime while conditioning for longevity.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🧴</span>
-                <h3>Leather Conditioning</h3>
-                <p>Premium conditioning treatments that keep your leather supple, prevent cracking, and extend the life of your investment.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🚚</span>
-                <h3>Pickup & Delivery</h3>
-                <p>Convenient pickup and drop-off service available. We come to you, pick-up your tack and return it after cleaning and conditioning.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <h2 class="section-title">Service Pricing</h2>
-        <p class="section-subtitle">Transparent pricing for quality service</p>
-        <div class="pricing-grid">
-            <div class="price-card">
-                <h3>Headstall</h3>
-                <div class="price">$35</div>
-                <ul class="price-features">
-                    <li>Dirt & dust removal</li>
-                    <li>Condition</li>
-                    <li>Quick turnaround</li>
-                </ul>
-            </div>
-            <div class="price-card featured">
-                <span class="featured-badge">POPULAR</span>
-                <h3>Basic Saddle Cleaning</h3>
-                <div class="price">$85</div>
-                <ul class="price-features">
-                    <li>Dirt & dust removal</li>
-                    <li>Condition</li>
-                    <li>Quick turnaround</li>
-                </ul>
-            </div>
-            <div class="price-card">
-                <h3>Tooled Saddle Cleaning</h3>
-                <div class="price">$100 - $150</div>
-                <ul class="price-features">
-                    <li>Dirt & dust removal</li>
-                    <li>Conditioning</li>
-                </ul>
+    <!-- Quick Overview Section -->
+    <section class="overview">
+        <div class="overview-container">
+            <h2 class="section-title">Welcome to Sud's Tack Care</h2>
+            <p class="section-subtitle">Your trusted partner in professional tack cleaning and maintenance</p>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <span class="overview-icon">⭐</span>
+                    <h3>Quality Service</h3>
+                    <p>Professional cleaning and conditioning for all your saddles and tack equipment</p>
+                    <a href="services.html" class="overview-link">View Services →</a>
+                </div>
+                <div class="overview-card">
+                    <span class="overview-icon">💰</span>
+                    <h3>Fair Pricing</h3>
+                    <p>Transparent pricing with no hidden fees. Starting at just $35 for headstalls</p>
+                    <a href="pricing.html" class="overview-link">See Pricing →</a>
+                </div>
+                <div class="overview-card">
+                    <span class="overview-icon">🚚</span>
+                    <h3>Convenient Pickup</h3>
+                    <p>We offer pickup and delivery service within 30 miles of our location</p>
+                    <a href="fees.html" class="overview-link">Delivery Info →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Additional Fees Section -->
-    <section id="fees" class="fees">
-        <h2 class="section-title">Additional Services</h2>
-        <p class="section-subtitle">Convenient options for busy equestrians</p>
-        <div class="fees-container">
-            <div class="fee-item">
-                <div>
-                    <div class="fee-name">Pickup & Drop-off Fee</div>
-                    <div class="fee-description">Within 30 miles of our location</div>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="why-choose-container">
+            <h2 class="section-title">Why Choose Sud's Tack Care?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Expert Care</h3>
+                    <p>Years of experience in cleaning and maintaining both Western and English tack</p>
                 </div>
-                <div class="fee-price">$25</div>
-            </div>
-            <div class="fee-item">
-                <div>
-                    <div class="fee-name">Mileage Fee</div>
-                    <div class="fee-description">Beyond 30 miles (per mile)</div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Premium Products</h3>
+                    <p>We use only the best leather care products to ensure longevity</p>
                 </div>
-                <div class="fee-price">$2/mile</div>
-            </div>
-            <div class="fee-item">
-                <div>
-                    <div class="fee-name">Rush Service</div>
-                    <div class="fee-description">24-hour turnaround</div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Quick Turnaround</h3>
+                    <p>Standard service completed within 3-5 days, rush service available</p>
                 </div>
-                <div class="fee-price">+$50</div>
-            </div>
-            <div class hidden="fee-item">
-                <div hidden>
-                    <div class="fee-name">Additional Items</div>
-                    <div class="fee-description">Halters, reins, stirrups (each)</div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Inspection Included</h3>
+                    <p>Free safety inspection with every cleaning to catch potential issues</p>
                 </div>
-                <div class="fee-price">$20 - $50</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="section-title" style="color: var(--white);">Get In Touch</h2>
-            <p class="section-subtitle" style="color: var(--accent);">Ready to give your tack the care it deserves?</p>
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>Phone</h3>
-                    <p>(308) 379-8937</p>
-                </div>
-                <div class hidden="contact-card">
-                    <h3>Email</h3>
-                    <p hidden>info@premiumtackcare.com</p>
-                </div>
-                <div class="contact-card">
-                    <h3>Hours</h3>
-                    <p>Mon-Fri: 8am - 5pm<br> Saturday & Sunday: By Appointment</p>
-                </div>
-            </div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Ready to Get Started?</h2>
+            <p>Give your tack the professional care it deserves</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
         </div>
     </section>
 
