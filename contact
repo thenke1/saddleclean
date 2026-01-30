@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sud's Tack Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">ST</div>
+                <span class="brand-name">Sud's Tack Care</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Get In Touch</h1>
+            <p>Ready to give your tack the care it deserves?</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p><a href="tel:3083798937">(308) 379-8937</a></p>
+                <span class="contact-note">Call or text</span>
+            </div>
+            <div class="contact-card">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 8am - 5pm<br>Saturday & Sunday: By Appointment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods">
+        <div class="methods-container">
+            <h2 class="section-title">How to Reach Us</h2>
+            <div class="methods-grid">
+                <div class="method-card">
+                    <span class="method-icon">📞</span>
+                    <h3>Call Us</h3>
+                    <p>Give us a call at <strong>(308) 379-8937</strong> during business hours. We're happy to answer questions and schedule service.</p>
+                </div>
+                <div class="method-card">
+                    <span class="method-icon">💬</span>
+                    <h3>Text Us</h3>
+                    <p>Prefer texting? Send a message to <strong>(308) 379-8937</strong> with your name, service needed, and preferred pickup time.</p>
+                </div>
+                <div class="method-card">
+                    <span class="method-icon">🏪</span>
+                    <h3>Visit Us</h3>
+                    <p>Drop off your tack during business hours. Contact us for our location and directions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Map Section -->
+    <section class="service-area">
+        <div class="area-container">
+            <h2 class="section-title">Service Area</h2>
+            <p class="section-subtitle">We proudly serve the local equestrian community</p>
+            <div class="area-content">
+                <div class="area-info">
+                    <h3>Pickup & Delivery Available</h3>
+                    <p>We offer convenient pickup and delivery service within 30 miles of our location. For areas beyond 30 miles, we charge a mileage fee of $2 per mile.</p>
+                    <p>Not sure if you're in our service area? Give us a call and we'll let you know!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Info Section -->
+    <section class="booking-info">
+        <div class="booking-container">
+            <h2 class="section-title">Ready to Book?</h2>
+            <p class="section-subtitle">Here's what we need to schedule your service</p>
+            <div class="booking-grid">
+                <div class="booking-item">
+                    <h3>1. Your Information</h3>
+                    <ul>
+                        <li>Name and phone number</li>
+                        <li>Pickup/delivery address</li>
+                        <li>Preferred contact method</li>
+                    </ul>
+                </div>
+                <div class="booking-item">
+                    <h3>2. Service Details</h3>
+                    <ul>
+                        <li>Items to be cleaned</li>
+                        <li>Type of service needed</li>
+                        <li>Any special requests</li>
+                    </ul>
+                </div>
+                <div class="booking-item">
+                    <h3>3. Scheduling</h3>
+                    <ul>
+                        <li>Preferred pickup date/time</li>
+                        <li>Standard or rush service</li>
+                        <li>Delivery preferences</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact CTA -->
+    <section class="quick-contact-cta">
+        <div class="quick-cta-container">
+            <h2>Don't Wait - Call Today!</h2>
+            <p>Professional tack care is just a phone call away</p>
+            <a href="tel:3083798937" class="cta-button phone-button">📞 (308) 379-8937</a>
+        </div>
+    </section>
+
+    <!-- Business Info Section -->
+    <section class="business-info">
+        <div class="business-container">
+            <h2 class="section-title">About Our Business</h2>
+            <div class="business-content">
+                <p>Sud's Tack Care is dedicated to providing professional cleaning and conditioning services for all your saddles and tack equipment. With years of experience and a passion for equestrian care, we treat your tack like our own.</p>
+                <p>We understand that your tack is an investment, and proper maintenance is essential for both longevity and safety. That's why we use only premium products and take the time to do the job right.</p>
+                <div class="business-features">
+                    <div class="feature">✓ Family-owned business</div>
+                    <div class="feature">✓ Premium products only</div>
+                    <div class="feature">✓ Safety inspection included</div>
+                    <div class="feature">✓ Fast turnaround times</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sud's Tack Care. All rights reserved.</p>
+            <p>Professional saddle and horse tack cleaning services.</p>
+            <p style="margin-top: 1rem;">
+                <a href="index.html" style="color: var(--accent); text-decoration: none;">Home</a> | 
+                <a href="services.html" style="color: var(--accent); text-decoration: none;">Services</a> | 
+                <a href="pricing.html" style="color: var(--accent); text-decoration: none;">Pricing</a> | 
+                <a href="fees.html" style="color: var(--accent); text-decoration: none;">Fees</a> | 
+                <a href="contact.html" style="color: var(--accent); text-decoration: none;">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
